@@ -1,9 +1,30 @@
 .section {
     padding-bottom: 100px;
+    min-height: 700px;
 }
 
 .section .section-header {
-    margin: 50px 0;
+    padding: 50px 0;
+}
+
+.skill-img-wrapper {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.skill-img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.skill-name {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .text-justify {
