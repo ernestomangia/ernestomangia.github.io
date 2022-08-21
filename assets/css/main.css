@@ -1,5 +1,6 @@
 body {
     font-size: 16px;
+    padding-top: 56px;
 }
 
 h1 {
@@ -26,8 +27,67 @@ h6 {
     font-size: 20px;
 }
 
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #0033AD;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+/* Avoid shifting when link made bold on hover  
+ * Use pseudo element to pre-set the width of the element hovered
+ */
+.navbar-nav .nav-link::before {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: #0033AD;
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after {
+    transform: scale(1);
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+    color: #0033AD;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active::after {
+    transform: scale(1);
+}
+
 .text-justify {
     text-align: justify;
+}
+
+.bg-gray {
+    background-color: #f9f9f9;
 }
 
 .section {
@@ -78,7 +138,6 @@ h6 {
 .skill-name {
     display: block;
     margin-top: 20px;
-    font-weight: bold;
     text-align: center;
 }
 

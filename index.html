@@ -12,16 +12,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <title>Ernesto Mangia | Full Stack .Net Developer </title>
+    <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/waves.css">
-    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body id="home">
+<body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
         <div class="container">
             <a class="navbar-brand"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-toggle"
@@ -31,16 +31,24 @@
             <div class="collapse navbar-collapse" id="menu-toggle">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home" target="_self">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home" target="_self" title="Home">
+                            Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#about-me" target="_self">About Me</a>
+                        <a class="nav-link" aria-current="page" href="#about-me" target="_self" title="About Me">
+                            About Me
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#projects" target="_self">Projects</a>
+                        <a class="nav-link" aria-current="page" href="#projects" target="_self" title="Projects">
+                            Projects
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#contact" target="_self">Contact</a>
+                        <a class="nav-link" aria-current="page" href="#contact" target="_self" title="Contact">
+                            Contact
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -48,7 +56,7 @@
     </nav>
 
     <!-- Home -->
-    <section class="section home">
+    <section id="home" class="section home">
         <div class="container container-home">
             <h4 class="fw-light intro">
                 Welcome, I'm
@@ -59,7 +67,7 @@
             <h5 class="fw-light job-title">
                 Full Stack Software .NET Developer
             </h5>
-            <hr/>
+            <hr />
         </div>
         <!-- Background -->
         <div class="waves-wrapper">
@@ -82,88 +90,95 @@
     <!-- Skills -->
     <section class="section section-sm skills">
         <div class="container">
-            <div class="row row-cols-3 row-cols-lg-6 gx-0 gy-5 text-center justify-content-center">
+            <div class="row row-cols-3 row-cols-lg-6 gx-0 gy-5 text-center justify-content-center lead">
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/c-sharp.png" alt="c-sharp" />
+                        <img class="skill-img" src="assets/img/skills/c-sharp.png" alt="c-sharp" title="C#" />
                     </div>
                     <span class="skill-name">C#</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="rounded-circle skill-img" src="assets/img/skills/dot-net.jpg" alt="dot-net" />
+                        <img class="rounded-circle skill-img" src="assets/img/skills/dot-net.jpg" alt="dot-net"
+                            title=".NET" />
                     </div>
                     <span class="skill-name">.NET</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/angular.svg" alt="angular" />
+                        <img class="skill-img" src="assets/img/skills/angular.svg" alt="angular" title="Angular" />
                     </div>
                     <span class="skill-name">Angular</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/typescript.png" alt="typescript" />
+                        <img class="skill-img" src="assets/img/skills/typescript.png" alt="typescript"
+                            title="TypeScript" />
                     </div>
                     <span class="skill-name">TypeScript</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/net-core.png" alt="net-core" />
+                        <img class="skill-img" src="assets/img/skills/net-core.png" alt="net-core" title=".NET Core" />
                     </div>
                     <span class="skill-name">.NET Core</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/angular-material.svg" alt="angular-material" />
+                        <img class="skill-img" src="assets/img/skills/angular-material.svg" alt="angular-material"
+                            title="Material" />
                     </div>
                     <span class="skill-name">Material</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/html5.svg" alt="html5" />
+                        <img class="skill-img" src="assets/img/skills/html5.svg" alt="html5" title="HTML" />
                     </div>
                     <span class="skill-name">HTML</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/css3.svg" alt="css3" />
+                        <img class="skill-img" src="assets/img/skills/css3.svg" alt="css3" title="CSS" />
                     </div>
                     <span class="skill-name">CSS</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/javascript.svg" alt="javascript" />
+                        <img class="skill-img" src="assets/img/skills/javascript.svg" alt="javascript"
+                            title="JavaScript" />
                     </div>
                     <span class="skill-name">JavaScript</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/bootstrap.png" alt="bootstrap" />
+                        <img class="skill-img" src="assets/img/skills/bootstrap.png" alt="bootstrap"
+                            title="Bootstrap" />
                     </div>
                     <span class="skill-name">Bootstrap</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/jquery.png" alt="jquery" />
+                        <img class="skill-img" src="assets/img/skills/jquery.png" alt="jquery" title="jQuery" />
                     </div>
                     <span class="skill-name">jQuery</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/sql.png" alt="sql" />
+                        <img class="skill-img" src="assets/img/skills/sql.png" alt="sql" title="SQL" />
                     </div>
                     <span class="skill-name">SQL</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/sql-server.png" alt="sql-server" />
+                        <img class="skill-img" src="assets/img/skills/sql-server.png" alt="sql-server"
+                            title="SQL Server" />
                     </div>
                     <span class="skill-name">SQL Server</span>
                 </div>
                 <div class="col">
                     <div class="skill-img-wrapper">
-                        <img class="skill-img" src="assets/img/skills/elasticsearch.svg" alt="html5" />
+                        <img class="skill-img" src="assets/img/skills/elasticsearch.svg" alt="elasticsearch"
+                            title="Elasticsearch" />
                     </div>
                     <span class="skill-name">Elasticsearch</span>
                 </div>
@@ -172,14 +187,14 @@
     </section>
 
     <!-- About -->
-    <section id="about-me" class="section">
+    <section id="about-me" class="section bg-gray about-me">
         <div class="container">
             <h2 class="text-center text-uppercase section-header">About Me</h2>
             <div class="row">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-8">
-                            <div class="card-body text-justify">
+                            <div class="card-body text-justify lead">
                                 <p class="card-text">
                                     Hello! I'm a Full Stack Software .NET Developer based in Paraná, Argentina.
                                 </p>
@@ -219,7 +234,7 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="section">
+    <section id="projects" class="section projects">
         <div class="container">
             <h2 class="text-center text-uppercase section-header">Projects</h2>
             <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -306,7 +321,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section">
+    <section id="contact" class="section contact">
         <div class="container">
             <div class="row">
                 <h2 class="text-center text-uppercase section-header">Contact</h2>
@@ -315,8 +330,8 @@
     </section>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
 </body>
 
