@@ -139,6 +139,10 @@ body {
     text-align: center;
 }
 
+.contact {
+    min-height: auto;
+}
+
 .social-link {
     text-decoration: none;
     color: #000;
