@@ -4,6 +4,21 @@ body {
     color: #000;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
+.bg-gray {
+    background-color: #f9f9f9;
+}
+
+.text-bg-light-2 {
+    background: #F9F9F9;
+    color: #666666;
+    font-weight: 500;
+}
+
+/* Navbar */
 .navbar-nav .nav-item {
     margin-right: 20px;
 }
@@ -59,14 +74,7 @@ body {
     transform: scale(1);
 }
 
-.text-justify {
-    text-align: justify;
-}
-
-.bg-gray {
-    background-color: #f9f9f9;
-}
-
+/* Section */
 .section {
     min-height: 700px;
     margin-bottom: 100px;
@@ -82,6 +90,7 @@ body {
     color: #0033AD;
 }
 
+/* Home section */
 .home {
     position: relative;
     background: linear-gradient(60deg, #0033AD 0%, #2294f4 100%);
@@ -120,6 +129,12 @@ body {
     max-width: 600px;
 }
 
+/* Projects */
+.projects .container {
+    max-width: 1000px;
+}
+
+/* Skills section */
 .skill-img-wrapper {
     width: 60px;
     height: 60px;
@@ -139,6 +154,7 @@ body {
     text-align: center;
 }
 
+/* Contact section */
 .contact {
     min-height: auto;
 }
@@ -149,11 +165,21 @@ body {
 }
 
 .social-link i {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .social-link i:hover {
     color: #0033AD;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+}
+
+/* Modal */
+ul li {
+    margin-bottom: 5px;
 }
 
 /**************** Media queries ****************/
