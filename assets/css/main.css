@@ -177,6 +177,14 @@ footer {
     background-color: #333;
 }
 
+footer a {
+    color: #6c757d;
+}
+
+footer a:hover {
+    color: white;
+}
+
 /* Modal */
 ul li {
     margin-bottom: 5px;
