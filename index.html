@@ -20,6 +20,15 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- JS -->
     <script type="text/javascript" src="assets/scripts/main.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8ZVSJTJL6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S8ZVSJTJL6');
+    </script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -718,12 +727,20 @@
     </section>
 
     <footer class="py-4">
-        <p class="text-center text-muted">
-            © 2022 - Ernesto Mangia |
-            <a href="#" class="text-white-50" data-bs-toggle="modal" data-bs-target="#trademarks-modal">
-                Trademarks
-            </a>
-        </p>
+        <div class="container text-muted">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col text-center text-md-start">
+                    <p>
+                        © 2022 - Ernesto Mangia
+                    </p>
+                </div>
+                <div class="col text-center text-md-end">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#trademarks-modal">
+                        Trademarks
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <div id="trademarks-modal" class="modal modal-lg fade" tabindex="-1" aria-labelledby="trademarksModalLabel"
