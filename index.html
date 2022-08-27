@@ -39,6 +39,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#skills" target="_self" title="SkillS">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#about" target="_self" title="About">
                             About
                         </a>
@@ -93,6 +98,7 @@
     <!-- Skills -->
     <section id="skills" class="section section-sm skills">
         <div class="container">
+            <h1 class="text-center text-uppercase section-header display-5">Skills</h1>
             <div class="row row-cols-3 row-cols-lg-6 gx-0 gy-5 text-center justify-content-center lead">
                 <div class="col">
                     <div class="skill-img-wrapper">
@@ -245,8 +251,8 @@
             <div class="card mb-5">
                 <div class="row g-0">
                     <div class="col-md-4 d-flex justify-content-center align-items-center">
-                        <img width="200px" src="assets/img/projects/climateearth-logo.png" alt="climateearth"
-                            title="climateearth">
+                        <img width="200px" src="assets/img/projects/climateearth-logo.png" alt="Climate Earth"
+                            title="Climate Earth">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -303,8 +309,8 @@
             <div class="card mb-5">
                 <div class="row g-0">
                     <div class="col-md-4 d-flex justify-content-center align-items-center">
-                        <img width="200px" src="assets/img/projects/formilla-logo.png" alt="climateearth"
-                            title="climateearth">
+                        <img width="200px" src="assets/img/projects/formilla-logo.png" alt="Formilla.com"
+                            title="Formilla.com">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -365,8 +371,7 @@
             <div class="card mb-5">
                 <div class="row g-0">
                     <div class="col-md-4 d-flex justify-content-center align-items-center">
-                        <img width="240px" src="assets/img/projects/hexacta-logo.jpg" alt="Hexacta logo"
-                            title="Hexacta logo">
+                        <img width="240px" src="assets/img/projects/hexacta-logo.jpg" alt="Hexacta" title="Hexacta">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -424,7 +429,7 @@
             <div class="card mb-5">
                 <div class="row g-0">
                     <div class="col-md-4 d-flex justify-content-center align-items-center">
-                        <img width="200px" src="assets/img/projects/winxis-logo.jpg" alt="winxis" title="winxis">
+                        <img width="200px" src="assets/img/projects/winxis-logo.jpg" alt="Winxis" title="Winxis">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -714,9 +719,35 @@
 
     <footer class="py-4">
         <p class="text-center text-muted">
-            © 2022 - Ernesto Mangia
+            © 2022 - Ernesto Mangia |
+            <a href="#" class="text-white-50" data-bs-toggle="modal" data-bs-target="#trademarks-modal">
+                Trademarks
+            </a>
         </p>
     </footer>
+
+    <div id="trademarks-modal" class="modal modal-lg fade" tabindex="-1" aria-labelledby="trademarksModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-lg-down modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h4" id="trademarksModalLabel">Trademarks</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Climate Earth logo is a trademark of Climate Earth, Inc.</li>
+                        <li>Formilla.com logo is a trademark of Zaia Gilyana.</li>
+                        <li>Hexacta logo is a trademark of Hexacta S.A.</li>
+                        <li>Winxis logo is a trademark of Winxis S.R.L.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
