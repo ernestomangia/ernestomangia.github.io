@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    padding-top: 56px;
+    padding-top: 61px;
     color: #000;
 }
 
@@ -76,18 +76,12 @@ body {
 
 /* Section */
 .section {
-    min-height: 700px;
-    margin-bottom: 100px;
-}
-
-.section.section-sm {
-    min-height: auto;
-    margin-bottom: 50px;
+    padding: 85px 0px;
 }
 
 .section .section-header {
-    padding: 50px 0;
     color: #0033AD;
+    padding-bottom: 50px;
 }
 
 /* Home section */
@@ -155,10 +149,6 @@ body {
 }
 
 /* Contact section */
-.contact {
-    min-height: auto;
-}
-
 .social-link {
     text-decoration: none;
     color: #000;
