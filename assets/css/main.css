@@ -1,6 +1,7 @@
 body {
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 16px;
-    padding-top: 61px;
+    font-weight: 400px;
     color: #000;
 }
 
@@ -86,22 +87,15 @@ body {
 
 /* Home section */
 .home {
-    position: relative;
     background: linear-gradient(60deg, #0033AD 0%, #2294f4 100%);
     color: white;
-    padding-top: 56px;
-    margin-top: -56px;
-}
-
-.home .container-home {
-    padding-top: 160px;
 }
 
 .home .intro,
 .home .full-name,
 .home .job-title {
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     line-height: 1.2;
 }
 
@@ -116,11 +110,23 @@ body {
 
 .home .job-title {
     font-size: 25px;
-    margin-top: 25px;
 }
 
 .home hr {
     max-width: 600px;
+}
+
+.home .social-link {
+    color: white;
+    font-size: 20px;
+}
+
+.home .social-link .bi-linkedin {
+    font-size: 18px;
+}
+
+.home .social-link i:hover {
+    color: #000000;
 }
 
 /* Projects */
@@ -149,16 +155,15 @@ body {
 }
 
 /* Contact section */
-.social-link {
-    text-decoration: none;
+.contact .social-link {
     color: #000;
 }
 
-.social-link i {
-    font-size: 35px;
+.contact .social-link i {
+    font-size: 25px;
 }
 
-.social-link i:hover {
+.contact .social-link i:hover {
     color: #0033AD;
 }
 
@@ -178,6 +183,38 @@ footer a:hover {
 /* Modal */
 ul li {
     margin-bottom: 5px;
+}
+
+/**************** Effects ****************/
+
+.fadeInRight {
+    -webkit-animation: fadeInRight 1000ms ease-in-out;
+    animation: fadeInRight 1000ms ease-in-out;
+}
+
+/* Chrome, Safari */
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /**************** Media queries ****************/

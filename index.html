@@ -13,10 +13,10 @@
     <link rel="manifest" href="assets/img/favicon/site.webmanifest">
     <title>Ernesto Mangia | Full Stack .NET Developer </title>
     <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/waves.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- JS -->
     <script type="text/javascript" src="assets/scripts/main.js"></script>
@@ -73,8 +73,8 @@
     </nav>
 
     <!-- Home -->
-    <section id="home" class="section home">
-        <div class="container container-home">
+    <section id="home" class="section d-flex flex-column justify-content-center vh-100 min-vh-100 home">
+        <div class="container fadeInRight">
             <p class="fw-light intro">
                 Welcome, I'm
             </p>
@@ -82,25 +82,20 @@
                 Ernesto Mangia
             </p>
             <hr />
-            <p class="fw-light job-title">
+            <p class="fw-light mt-4 job-title">
                 Full Stack .NET Developer
             </p>
-        </div>
-        <!-- Background -->
-        <div class="waves-wrapper">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="gentle-wave"
-                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                </g>
-            </svg>
+            <div class="d-flex mt-4 gap-4">
+                <a class="social-link" href="https://www.linkedin.com/in/ernestomangia" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="social-link" href="https://github.com/ernestomangia" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a class="social-link" href="mailto:ernestomangia.it@gmail.com" target="_blank">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -727,7 +722,7 @@
                         <i class="bi bi-linkedin"></i>
                     </a>
                     <a class="social-link" href="mailto:ernestomangia.it@gmail.com" target="_blank">
-                        <i class="bi bi-envelope"></i>
+                        <i class="bi bi-envelope-fill"></i>
                     </a>
                 </div>
             </div>
