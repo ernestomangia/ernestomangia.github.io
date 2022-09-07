@@ -67,36 +67,54 @@
                             Contact
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page"
+                            href="https://drive.google.com/file/d/1gKdScz73H_anZDcMV7JXOBCDJDcpD_3n/view?usp=sharing"
+                            target="_blank" title="Resume">
+                            Resume
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Home -->
-    <section id="home" class="section d-flex flex-column justify-content-center vh-100 min-vh-100 home">
-        <div class="container fadeInRight">
-            <p class="fw-light intro">
-                Welcome, I'm
-            </p>
-            <p class="full-name">
-                Ernesto Mangia
-            </p>
-            <hr />
-            <p class="fw-light mt-4 job-title">
-                Full Stack .NET Developer
-            </p>
-            <div class="d-flex mt-4 gap-4">
-                <a class="social-link" href="https://www.linkedin.com/in/ernestomangia" target="_blank"
-                    title="LinkedIn">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a class="social-link" href="https://github.com/ernestomangia" target="_blank" title="GitHub">
-                    <i class="bi bi-github"></i>
-                </a>
-                <a class="social-link" href="mailto:ernestomangia.it@gmail.com" target="_blank"
-                    title="ernestomangia.it@gmail.com">
-                    <i class="bi bi-envelope-fill"></i>
-                </a>
+    <section id="home" class="section d-flex vh-100 min-vh-100 home">
+        <div class="container d-md-flex flex-md-row">
+            <div class="fadeInLeft align-self-md-center flex-md-fill home-intro-wrapper">
+                <p class="fw-light intro">
+                    Welcome, I'm
+                </p>
+                <p class="full-name">
+                    Ernesto Mangia
+                </p>
+                <hr />
+                <p class="fw-light mt-4 job-title">
+                    Full Stack .NET Developer
+                </p>
+                <div class="d-flex mt-4 gap-4">
+                    <a class="social-link" href="https://www.linkedin.com/in/ernestomangia" target="_blank"
+                        title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="social-link" href="https://github.com/ernestomangia" target="_blank" title="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a class="social-link" href="mailto:contact@ernestomangia.com" target="_blank"
+                        title="contact@ernestomangia.com">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <a class="social-link"
+                        href="https://drive.google.com/file/d/1gKdScz73H_anZDcMV7JXOBCDJDcpD_3n/view?usp=sharing"
+                        target="_blank" title="Resume">
+                        <i class="bi bi-file-earmark-pdf-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="fadeInRight home-img-wrapper">
+                <img src="assets/img/me-with-computer.webp" alt="Me" title="Me" />
             </div>
         </div>
     </section>
@@ -211,7 +229,7 @@
                         <div class="col-md-8">
                             <div class="card-body lead">
                                 <p class="card-text">
-                                    Hello! I'm a Full Stack Software .NET Developer based in Paraná, Argentina.
+                                    Hello! I'm a Full Stack .NET Developer based in Paraná, Argentina.
                                 </p>
                                 <p class="card-text">
                                     I have a bachelor degree in Information Systems and 10+ years of experience in .NET
@@ -239,7 +257,7 @@
                         </div>
                         <div class="col-md-4 text-center">
                             <div class="d-flex flex-column h-100 justify-content-center align-items-center p-4">
-                                <img width="70%" src="assets/img/me.jpg" class="img-fluid rounded-circle" alt="me">
+                                <img src="assets/img/me.webp" class="img-fluid rounded-circle" alt="Me" title="Me">
                             </div>
                         </div>
                     </div>
@@ -716,6 +734,13 @@
             <div class="row">
                 <h1 class="text-center text-uppercase section-header">Contact</h1>
                 <p class="lead text-center mb-5">Feel free to drop me a message!</p>
+                <div class="d-flex justify-content-center mb-4">
+                    <a class="social-link" href="https://www.codementor.io/@ernestomangia?refer=badge" target="_blank"
+                        title="Codementor">
+                        <img width="240px" src="https://www.codementor.io/m-badges/ernestomangia/contact-me.svg"
+                            alt="Codementor badge" title="Codementor">
+                    </a>
+                </div>
                 <div class="d-flex gap-5 justify-content-center">
                     <a class="social-link" href="https://www.linkedin.com/in/ernestomangia" target="_blank"
                         title="LinkedIn">
@@ -728,6 +753,11 @@
                         title="contact@ernestomangia.com">
                         <i class="bi bi-envelope-fill"></i>
                     </a>
+                    <a class="social-link"
+                        href="https://drive.google.com/file/d/1gKdScz73H_anZDcMV7JXOBCDJDcpD_3n/view?usp=sharing"
+                        target="_blank" title="Resume">
+                        <i class="bi bi-file-earmark-pdf-fill"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -738,7 +768,10 @@
             <div class="row row-cols-1 row-cols-md-2">
                 <div class="col text-center text-md-start">
                     <p>
-                        © <span id="current-year"></span> - Ernesto Mangia
+                        <a href="https://github.com/ernestomangia/ernestomangia.github.io" target="_blank"
+                            title="Github Repo">
+                            © <span id="current-year"></span> - Ernesto Mangia
+                        </a>
                     </p>
                 </div>
                 <div class="col text-center text-md-end">

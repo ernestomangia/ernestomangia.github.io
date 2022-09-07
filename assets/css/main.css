@@ -1,8 +1,9 @@
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #000;
+    min-width: 300px;
 }
 
 .bg-gray {
@@ -87,6 +88,34 @@ body {
 .home {
     background: linear-gradient(60deg, #0033AD 0%, #2294f4 100%);
     color: white;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.home-intro-wrapper {
+    position: relative;
+    z-index: 999;
+    margin-top: 30px;
+}
+
+.home-img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.home-img-wrapper img {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: auto;
+    height: 75%;
+    max-height: 900px;
 }
 
 .home .intro,
@@ -193,13 +222,12 @@ ul li {
 
 /**************** Effects ****************/
 
-.fadeInRight {
-    -webkit-animation: fadeInRight 1000ms ease-in-out;
-    animation: fadeInRight 1000ms ease-in-out;
+.fadeInLeft {
+    -webkit-animation: fadeInLeft 1000ms ease-in-out;
+    animation: fadeInLeft 1000ms ease-in-out;
 }
 
-/* Chrome, Safari */
-@-webkit-keyframes fadeInRight {
+@-webkit-keyframes fadeInLeft {
     0% {
         opacity: 0;
         -webkit-transform: translateX(-150px);
@@ -207,11 +235,11 @@ ul li {
 
     100% {
         opacity: 1;
-        -webkit-transform: translateY(0);
+        -webkit-transform: translateX(0);
     }
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInLeft {
     0% {
         opacity: 0;
         transform: translateX(-150px);
@@ -219,24 +247,81 @@ ul li {
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    -webkit-animation: fadeInRight 1000ms ease-in-out;
+    animation: fadeInRight 1000ms ease-in-out;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(150px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
 /**************** Media queries ****************/
+
+@media (min-width: 768px) {
+    .home-intro-wrapper {
+        margin-top: unset;
+        padding-bottom: 85px;
+    }
+
+    .home-img-wrapper {
+        position: relative;
+        width: 40%;
+        min-width: 40%;
+        overflow: visible;
+        top: auto;
+        left: auto;
+    }
+
+    .home-img-wrapper img {
+        height: 100%;
+        width: auto;
+        right: auto;
+    }
+}
+
 @media(min-width: 992px) {
-    .section .section-header  {
+    .navbar-nav .nav-item:last-child .nav-link {
+        min-width: 110px;
+        margin-left: 30px;
+    }
+
+    .section .section-header {
         font-size: 48px;
     }
 
     .home .intro {
         font-size: 35px;
     }
-    
+
     .home .full-name {
         font-size: 60px;
     }
-    
+
     .home .job-title {
         font-size: 25px;
     }
